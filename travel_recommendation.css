@@ -45,6 +45,11 @@ body {
   color: #d2693c;
 }
 
+.nav-links a.active {
+  color: #d2693c;
+  font-weight: bold;
+}
+
 .search-container {
   display: flex;
   align-items: center;
@@ -143,4 +148,91 @@ body {
 /* ===== Zone des résultats (pour la recherche) ===== */
 .results {
   max-width: 420px;
+}
+
+/* ===== Pages About Us et Contact Us ===== */
+.page-hero {
+  position: relative;
+  min-height: calc(100vh - 67px);
+  padding: 40px 80px 40px 100px;
+  background-image:
+    linear-gradient(rgba(20, 35, 28, 0.80), rgba(20, 35, 28, 0.55)),
+    url("background.jpg");
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.page-title {
+  font-size: 56px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.about-text {
+  max-width: 800px;
+  background-color: rgba(20, 35, 28, 0.55);
+  border-left: 4px solid #b5532c;
+  border-radius: 6px;
+  padding: 20px 25px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.about-text p + p {
+  margin-top: 12px;
+}
+
+/* ===== Section équipe ===== */
+.team-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-title {
+  font-size: 48px;
+  line-height: 1.1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.team-cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  width: 210px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(253, 248, 240, 0.12);
+  border: 1px solid rgba(253, 248, 240, 0.25);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.team-card i {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.team-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.role {
+  display: inline-block;
+  background-color: #b5532c;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
 }
