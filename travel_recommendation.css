@@ -1,0 +1,146 @@
+/* ===== Réglages généraux ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fdf8f0;
+  background-color: #1f3a2e;
+}
+
+/* ===== Barre de navigation ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #1f3a2e;
+  border-bottom: 3px solid #b5532c;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.logo-img {
+  height: 40px;
+  border-radius: 6px;
+}
+
+.nav-links a {
+  color: #fdf8f0;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.nav-links a:hover {
+  color: #d2693c;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fdf8f0;
+  padding: 5px 8px;
+  border-radius: 25px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 6px 10px;
+  width: 220px;
+  color: #1f3a2e;
+}
+
+.search-container button {
+  background-color: #b5532c;
+  color: #fdf8f0;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #d2693c;
+}
+
+/* ===== Page d'accueil ===== */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 67px);
+  padding: 40px 80px;
+  background-image:
+    linear-gradient(to right, rgba(20, 35, 28, 0.85), rgba(20, 35, 28, 0.15)),
+    url("background.jpg");
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.social-icons {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fdf8f0;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #d2693c;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn-book {
+  display: inline-block;
+  background-color: #b5532c;
+  color: #fdf8f0;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 5px;
+}
+
+.btn-book:hover {
+  background-color: #d2693c;
+}
+
+/* ===== Zone des résultats (pour la recherche) ===== */
+.results {
+  max-width: 420px;
+}
