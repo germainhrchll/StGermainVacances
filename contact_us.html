@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | StGermain Vacances</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="saintgermainvacances.jpg" alt="StGermain Vacances logo" class="logo-img">
+      <span>StGermain Vacances</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a href="contact_us.html" class="active">Contact Us</a>
+    </div>
+  </nav>
+
+  <main class="page-hero contact-page">
+    <div class="social-icons">
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <section class="contact-info">
+      <h1 class="page-title">Contact Us</h1>
+      <p class="contact-subtitle">Get in touch! We would love to help you plan your next trip.</p>
+
+      <ul class="contact-details">
+        <li><i class="fa-solid fa-envelope"></i> contact@stgermainvacances.com</li>
+        <li><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</li>
+        <li><i class="fa-solid fa-location-dot"></i> 12 Rue de la Paix, 75002 Paris, France</li>
+      </ul>
+    </section>
+
+    <form class="contact-form" action="mailto:contact@stgermainvacances.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
